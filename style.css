@@ -1,0 +1,299 @@
+body, html {
+    margin:3px;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: auto;
+    z-index: -1; /* 将视频放在所有其他元素的后面 */
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h1{
+    font-size: 6vw;
+    color:rgb(87, 83, 78);
+    margin:10px;
+    line-height: 6vw;;
+}
+
+span{
+    opacity: 0;
+    position: fixed;
+    transition: transform 0.5s ease;
+    font-size: 0.75vw;
+}
+
+
+/* A:Graphic Design Sec*/
+.Abt1:hover span,
+.Abt2:hover span,
+.Abt3:hover span,
+.Abt4:hover span,
+.Abt5:hover span,
+.Abt6:hover span{
+    opacity: 1;
+    transform: translateX(1.5vw);
+    color:rgb(255, 0, 0);
+}
+
+.Abt1:hover,
+.Abt2:hover,
+.Abt3:hover,
+.Abt4:hover,
+.Abt5:hover,
+.Abt6:hover{
+    background-color:red;
+    transform: scale(1.5);
+}
+
+.Abt1{
+    position:absolute;
+    left:53vw;
+    top:8vw;
+    width: 1vw;
+    height: 1vw;
+    background-color:white; 
+    border-radius: 50%; /* 使用 border-radius 设置为50% 创造圆形 */
+    transition:transform 0.5s ease;
+}
+.Abt2{
+    position:absolute;
+    left:53vw;
+    top:12vw;
+    width: 1vw;
+    height: 1vw;
+    background-color:white;
+    border-radius: 50%; /* 使用 border-radius 设置为50% 创造圆形 */
+    transition:transform 0.5s ease;
+}
+.Abt3{
+    position:absolute;
+    left:57vw;
+    top:16vw;
+    width: 1vw;
+    height: 1vw;
+    background-color:white;
+    border-radius: 50%; /* 使用 border-radius 设置为50% 创造圆形 */
+    transition:transform 0.5s ease;
+}
+.Abt4{
+    position:absolute;
+    left:57vw;
+    top:19vw;
+    width: 1vw;
+    height: 1vw;
+    background-color:white;
+    border-radius: 50%; /* 使用 border-radius 设置为50% 创造圆形 */
+    transition:transform 0.5s ease;
+}
+.Abt5{
+    position:absolute;
+    left:57vw;
+    top:24vw;
+    width: 1vw;
+    height: 1vw;
+    background-color:white;
+    border-radius: 50%; /* 使用 border-radius 设置为50% 创造圆形 */
+    transition:transform 0.5s ease;
+}
+.Abt6{
+    position:absolute;
+    left:57vw;
+    top:30vw;
+    width: 1vw;
+    height: 1vw;
+    background-color:white;
+    border-radius: 50%; /* 使用 border-radius 设置为50% 创造圆形 */
+    transition:transform 0.5s ease;
+}
+
+
+/* B:Illustration Sec*/
+.Bbt1:hover span,
+.Bbt2:hover span,
+.Bbt3:hover span,
+.Bbt4:hover span{
+    opacity: 1;
+    transform: translateX(1.5vw);
+    color:rgb(8, 146, 43);
+}
+
+.Bbt1:hover,
+.Bbt2:hover,
+.Bbt3:hover,
+.Bbt4:hover{
+    background-color:rgb(8, 146, 43);
+    transform: scale(1.5);
+}
+
+.Bbt1{
+    position:absolute;
+    left:63vw;
+    top:7vw;
+    width: 1vw;
+    height: 1vw;
+    background-color:white;
+    border-radius: 50%; /* 使用 border-radius 设置为50% 创造圆形 */
+    transition:transform 0.5s ease;
+}
+.Bbt2{
+    position:absolute;
+    left:65.7vw;
+    top:10.5vw;
+    width: 1vw;
+    height: 1vw;
+    background-color:white;
+    border-radius: 50%; /* 使用 border-radius 设置为50% 创造圆形 */
+    transition:transform 0.5s ease;
+}
+.Bbt3{
+    position:absolute;
+    left:63vw;
+    top:13vw;
+    width: 1vw;
+    height: 1vw;
+    background-color:white;
+    border-radius: 50%; /* 使用 border-radius 设置为50% 创造圆形 */
+    transition:transform 0.5s ease;
+}
+.Bbt4{
+    position:absolute;
+    left:61.5vw;
+    top:21.5vw;
+    width: 1vw;
+    height: 1vw;
+    background-color:white;
+    border-radius: 50%; /* 使用 border-radius 设置为50% 创造圆形 */
+    transition:transform 0.5s ease;
+}
+
+
+/* C:Collage Sec*/
+.Cbt1:hover span{
+    opacity: 1;
+    transform: translateX(1.5vw);
+    color:rgb(0, 24, 236);
+}
+
+.Cbt1:hover{
+    background-color:rgb(0, 24, 236);
+    transform: scale(1.5);
+}
+
+.Cbt1{
+    position:absolute;
+    left:49vw;
+    top:10.5vw;
+    width: 1vw;
+    height: 1vw;
+    background-color:white;
+    border-radius: 50%; /* 使用 border-radius 设置为50% 创造圆形 */
+    transition:transform 0.5s ease;
+}
+
+
+/* D:Accessory Design Sec*/
+.Dbt1:hover span,
+.Dbt2:hover span{
+    opacity: 1;
+    transform: translateX(1.5vw);
+    color:rgb(255, 187, 0);
+}
+
+.Dbt1:hover,
+.Dbt2:hover{
+    background-color:rgb(255, 187, 0);
+    transform: scale(1.5);
+}
+
+.Dbt1{
+    position:absolute;
+    left:58vw;
+    top:4vw;
+    width: 1vw;
+    height: 1vw;
+    background-color:white;
+    border-radius: 50%; /* 使用 border-radius 设置为50% 创造圆形 */
+    transition:transform 0.5s ease;
+}
+.Dbt2{
+    position:absolute;
+    left:58vw;
+    top:6vw;
+    width: 1vw;
+    height: 1vw;
+    background-color:white;
+    border-radius: 50%; /* 使用 border-radius 设置为50% 创造圆形 */
+    transition:transform 0.5s ease;
+}
+
+
+/* E:Photography Sec*/
+.Ebt1:hover span,
+.Ebt2:hover span,
+.Ebt3:hover span,
+.Ebt4:hover span{
+    opacity: 1;
+    transform: translateX(1.5vw);
+    color:rgb(118, 5, 184);
+}
+
+.Ebt1:hover,
+.Ebt2:hover,
+.Ebt3:hover,
+.Ebt4:hover{
+    background-color:rgb(118, 5, 184);
+    transform: scale(1.5);
+}
+
+.Ebt1{
+    position:absolute;
+    left:49vw;
+    top:22.5vw;
+    width: 1vw;
+    height: 1vw;
+    background-color:white;
+    border-radius: 50%; /* 使用 border-radius 设置为50% 创造圆形 */
+    transition:transform 0.5s ease;
+}
+.Ebt2{
+    position:absolute;
+    left:49vw;
+    top:26vw;
+    width: 1vw;
+    height: 1vw;
+    background-color:white;
+    border-radius: 50%; /* 使用 border-radius 设置为50% 创造圆形 */
+    transition:transform 0.5s ease;
+}
+.Ebt3{
+    position:absolute;
+    left:49vw;
+    top:29vw;
+    width: 1vw;
+    height: 1vw;
+    background-color:white;
+    border-radius: 50%; /* 使用 border-radius 设置为50% 创造圆形 */
+    transition:transform 0.5s ease;
+}
+.Ebt4{
+    position:absolute;
+    left:49vw;
+    top:34vw;
+    width: 1vw;
+    height: 1vw;
+    background-color:white;
+    border-radius: 50%; /* 使用 border-radius 设置为50% 创造圆形 */
+    transition:transform 0.5s ease;
+}
