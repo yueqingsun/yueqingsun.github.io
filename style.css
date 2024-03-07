@@ -26,11 +26,13 @@ video {
 h1{
     font-size: 2.5vw;
     color:rgb(114, 109, 104);
-    margin:10px;
+    margin:10px;   
+    cursor: default;
 }
 
 .class{
     width:13vw;
+    cursor: default;
 }
 
 p{
@@ -43,6 +45,20 @@ p{
 
 .A:hover{
     color: red;
+    transform: scale(1.3);
+}
+
+.A:hover ~ .Abt1 {
+    background-color: red;
+    transform: scale(1.3);
+}
+.A:hover ~ .Abt1,
+.A:hover ~ .Abt2,
+.A:hover ~ .Abt3,
+.A:hover ~ .Abt4,
+.A:hover ~ .Abt5,
+.A:hover ~ .Abt6{
+    background-color: red;
     transform: scale(1.3);
 }
 .B:hover{
