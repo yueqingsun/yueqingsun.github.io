@@ -4,8 +4,8 @@ body, html {
     height: 100%;
     overflow: hidden;
     font-family: "franklin-gothic-urw", sans-serif;
-font-weight: 500;
-font-style: italic;
+    font-weight: 500;
+    font-style: italic;
 }
 
 .bg {
@@ -31,11 +31,8 @@ h1{
 }
 
 .class{
-    width:13vw;
+    max-width: fit-content;
     cursor: default;
-}
-
-p{
     font-size: 1vw;
     color:rgb(114, 109, 104);
     margin:10px;
@@ -43,41 +40,110 @@ p{
     transition: transform 0.5s ease;
 }
 
+/* 悬停主分类 */
 .A:hover{
     color: red;
     transform: scale(1.3);
 }
 
-.A:hover ~ .Abt1 {
-    background-color: red;
-    transform: scale(1.3);
-}
 .A:hover ~ .Abt1,
 .A:hover ~ .Abt2,
 .A:hover ~ .Abt3,
 .A:hover ~ .Abt4,
 .A:hover ~ .Abt5,
-.A:hover ~ .Abt6{
+.A:hover ~ .Abt6,
+.A:hover ~ .Abt7{
     background-color: red;
-    transform: scale(1.3);
 }
+
+.A:hover ~ .Abt1 span,
+.A:hover ~ .Abt2 span,
+.A:hover ~ .Abt3 span,
+.A:hover ~ .Abt4 span,
+.A:hover ~ .Abt5 span,
+.A:hover ~ .Abt6 span,
+.A:hover ~ .Abt7 span{
+    opacity: 1;
+    transform: translateX(1.5vw);
+    color:rgb(255, 0, 0);
+}
+
 .B:hover{
     color: rgb(8, 146, 43);
     transform: scale(1.3);
 }
+
+.B:hover ~ .Bbt1,
+.B:hover ~ .Bbt2,
+.B:hover ~ .Bbt3,
+.B:hover ~ .Bbt4,
+.B:hover ~ .Bbt5{
+    background-color: rgb(8, 146, 43);
+}
+
+.B:hover ~ .Bbt1 span,
+.B:hover ~ .Bbt2 span,
+.B:hover ~ .Bbt3 span,
+.B:hover ~ .Bbt4 span,
+.B:hover ~ .Bbt5 span{
+    opacity: 1;
+    transform: translateX(1.5vw);
+    color:rgb(8, 146, 43);
+}
+
 .C:hover{
     color: rgb(0, 24, 236);
     transform: scale(1.3);
 }
+
+.C:hover ~ .Cbt1{
+    background-color: rgb(0, 24, 236);
+}
+
+.C:hover ~ .Cbt1 span{
+    opacity: 1;
+    transform: translateX(1.5vw);
+    color:rgb(0, 24, 236);
+}
+
+
 .D:hover{
-    color: rgb(255, 153, 0);
+    color: rgb(255, 187, 0);
     transform: scale(1.3);
 }
+
+.D:hover ~ .Dbt1,
+.D:hover ~ .Dbt2{
+    background-color: rgb(255, 187, 0);
+}
+
+.D:hover ~ .Dbt1 span,
+.D:hover ~ .Dbt2 span{
+    opacity: 1;
+    transform: translateX(1.5vw);
+    color:rgb(255, 187, 0);
+}
+
 .E:hover{
     color: rgb(118, 5, 184);
     transform: scale(1.3);
 }
 
+.E:hover ~ .Ebt1,
+.E:hover ~ .Ebt2,
+.E:hover ~ .Ebt3,
+.E:hover ~ .Ebt4{
+    background-color: rgb(118, 5, 184);
+}
+
+.E:hover ~ .Ebt1 span,
+.E:hover ~ .Ebt2 span,
+.E:hover ~ .Ebt3 span,
+.E:hover ~ .Ebt4 span{
+    opacity: 1;
+    transform: translateX(1.5vw);
+    color:rgb(118, 5, 184);
+}
 
 span{
     position: fixed;
@@ -188,7 +254,8 @@ span{
 .Bbt1:hover span,
 .Bbt2:hover span,
 .Bbt3:hover span,
-.Bbt4:hover span{
+.Bbt4:hover span,
+.Bbt5:hover span{
     opacity: 1;
     transform: translateX(1.5vw);
     color:rgb(8, 146, 43);
@@ -197,7 +264,8 @@ span{
 .Bbt1:hover,
 .Bbt2:hover,
 .Bbt3:hover,
-.Bbt4:hover{
+.Bbt4:hover,
+.Bbt5:hover{
     background-color:rgb(8, 146, 43);
     transform: scale(1.5);
 }
@@ -234,6 +302,16 @@ span{
 }
 .Bbt4{
     position:absolute;
+    left:65vw;
+    top:18vw;
+    width: 1vw;
+    height: 1vw;
+    background-color:white;
+    border-radius: 50%; /* 使用 border-radius 设置为50% 创造圆形 */
+    transition:transform 0.5s ease;
+}
+.Bbt5{
+    position:absolute;
     left:61.5vw;
     top:21.5vw;
     width: 1vw;
@@ -242,7 +320,6 @@ span{
     border-radius: 50%; /* 使用 border-radius 设置为50% 创造圆形 */
     transition:transform 0.5s ease;
 }
-
 
 /* C:Collage Sec*/
 .Cbt1:hover span{
