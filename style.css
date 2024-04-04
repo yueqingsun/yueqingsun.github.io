@@ -52,7 +52,8 @@ h1{
 .A:hover ~ .Abt4,
 .A:hover ~ .Abt5,
 .A:hover ~ .Abt6,
-.A:hover ~ .Abt7{
+.A:hover ~ .Abt7,
+.A:hover ~ .Abt8{
     background-color: red;
 }
 
@@ -62,7 +63,8 @@ h1{
 .A:hover ~ .Abt4 span,
 .A:hover ~ .Abt5 span,
 .A:hover ~ .Abt6 span,
-.A:hover ~ .Abt7 span{
+.A:hover ~ .Abt7 span,
+.A:hover ~ .Abt8 span{
     opacity: 1;
     transform: translateX(1.5vw);
     color:rgb(255, 0, 0);
@@ -163,7 +165,8 @@ span{
 .Abt4:hover span,
 .Abt5:hover span,
 .Abt6:hover span,
-.Abt7:hover span{
+.Abt7:hover span,
+.Abt8:hover span{
     opacity: 1;
     transform: translateX(1.5vw);
     color:rgb(255, 0, 0);
@@ -175,7 +178,8 @@ span{
 .Abt4:hover,
 .Abt5:hover,
 .Abt6:hover,
-.Abt7:hover{
+.Abt7:hover,
+.Abt8:hover{
     background-color:red;
     transform: scale(1.5);
 }
@@ -252,6 +256,16 @@ span{
     transition:transform 0.5s ease;
 }
 
+.Abt8{
+    position:absolute;
+    left:65.5vw;
+    top:16vw;
+    width: 1vw;
+    height: 1vw;
+    background-color:white;
+    border-radius: 50%; /* 使用 border-radius 设置为50% 创造圆形 */
+    transition:transform 0.5s ease;
+}
 /* B:Illustration Sec*/
 .Bbt1:hover span,
 .Bbt2:hover span,
